@@ -1,0 +1,27 @@
+info:
+  name: put users avec toutes valeurs
+  type: http
+  seq: 38
+
+http:
+  method: PUT
+  url: http://localhost:8080/sae/users/3
+  body:
+    type: json
+    data: |-
+      {
+        "id": 3,
+        "login": "dupond",
+        "password": "abcd",
+        "role": "USER"
+      }
+  auth:
+    type: basic
+    username: paul
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

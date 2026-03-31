@@ -1,0 +1,18 @@
+info:
+  name: delete point (vide le point)
+  type: http
+  seq: 48
+
+http:
+  method: DELETE
+  url: http://localhost:8080/sae/points/1/clear
+  auth:
+    type: basic
+    username: paul
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

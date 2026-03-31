@@ -1,0 +1,25 @@
+info:
+  name: patch deposit avec toutes valeurs sans token
+  type: http
+  seq: 36
+
+http:
+  method: PATCH
+  url: http://localhost:8080/sae/deposits/2
+  body:
+    type: json
+    data: |-
+      {
+        "id": 2,
+        "userid": 2,
+        "pointid": 10,
+        "wastetypeid": 100,
+        "poids": 40
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

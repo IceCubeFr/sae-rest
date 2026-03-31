@@ -1,0 +1,15 @@
+info:
+  name: get collectionPoint id
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: http://localhost:8080/sae/points/1
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

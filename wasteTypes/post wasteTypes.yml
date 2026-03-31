@@ -1,0 +1,26 @@
+info:
+  name: post wasteTypes
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/sae/wasteTypes
+  body:
+    type: json
+    data: |-
+      {
+        "id": 1,
+        "nom": "plop",
+        "pointsPerKilos": 100
+      }
+  auth:
+    type: basic
+    username: paul
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

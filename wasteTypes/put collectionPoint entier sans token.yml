@@ -1,0 +1,23 @@
+info:
+  name: put collectionPoint entier sans token
+  type: http
+  seq: 17
+
+http:
+  method: PUT
+  url: http://localhost:8080/sae/points/1
+  body:
+    type: json
+    data: |-
+      {
+        "id":1,
+        "adresse":"Lille",
+        "capaciteMax":500
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

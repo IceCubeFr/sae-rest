@@ -1,0 +1,28 @@
+info:
+  name: put deposit avec toutes valeurs
+  type: http
+  seq: 31
+
+http:
+  method: PUT
+  url: http://localhost:8080/sae/deposits/2
+  body:
+    type: json
+    data: |-
+      {
+        "id": 2,
+        "userid": 2,
+        "pointid": 10,
+        "wastetypeid": 100,
+        "poids": 20
+      }
+  auth:
+    type: basic
+    username: paul
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

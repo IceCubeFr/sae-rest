@@ -1,0 +1,24 @@
+info:
+  name: patch users avec toutes valeurs sans token
+  type: http
+  seq: 43
+
+http:
+  method: PATCH
+  url: http://localhost:8080/sae/users/3
+  body:
+    type: json
+    data: |-
+      {
+        "id": 3,
+        "login": "dupond",
+        "password": "abcd",
+        "role": "USER"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

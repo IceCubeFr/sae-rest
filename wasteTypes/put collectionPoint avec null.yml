@@ -1,0 +1,25 @@
+info:
+  name: put collectionPoint avec null
+  type: http
+  seq: 14
+
+http:
+  method: PUT
+  url: http://localhost:8080/sae/points/1
+  body:
+    type: json
+    data: |-
+      {
+        "id":1,
+        "capaciteMax": 200
+      }
+  auth:
+    type: basic
+    username: paul
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

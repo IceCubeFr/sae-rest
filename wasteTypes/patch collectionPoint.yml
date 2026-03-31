@@ -1,0 +1,26 @@
+info:
+  name: patch collectionPoint
+  type: http
+  seq: 18
+
+http:
+  method: PATCH
+  url: http://localhost:8080/sae/points/1
+  body:
+    type: json
+    data: |-
+      {
+        "id":1,
+        "adresse":"Montpellier",
+        "capaciteMax":700
+      }
+  auth:
+    type: basic
+    username: paul
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

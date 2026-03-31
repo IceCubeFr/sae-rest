@@ -1,0 +1,27 @@
+info:
+  name: post deposit avec erreur (point n'existe pas)
+  type: http
+  seq: 24
+
+http:
+  method: POST
+  url: http://localhost:8080/sae/deposits
+  body:
+    type: json
+    data: |-
+      {
+        "userid": 2,
+        "pointid": 1000,
+        "wastetypeid": 100,
+        "poids": 200
+      }
+  auth:
+    type: basic
+    username: dupont
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

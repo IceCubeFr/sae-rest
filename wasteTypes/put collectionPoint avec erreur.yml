@@ -1,0 +1,18 @@
+info:
+  name: put collectionPoint avec erreur
+  type: http
+  seq: 15
+
+http:
+  method: PUT
+  url: http://localhost:8080/sae/points/144
+  auth:
+    type: basic
+    username: paul
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

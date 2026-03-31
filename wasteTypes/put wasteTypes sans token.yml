@@ -1,0 +1,22 @@
+info:
+  name: put wasteTypes sans token
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: http://localhost:8080/sae/wasteTypes
+  body:
+    type: json
+    data: |2-
+       {
+         "id":1,
+         "pointsPerKilos":100
+       }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

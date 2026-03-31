@@ -1,0 +1,27 @@
+info:
+  name: post deposit
+  type: http
+  seq: 22
+
+http:
+  method: POST
+  url: http://localhost:8080/sae/deposits
+  body:
+    type: json
+    data: |-
+      {
+        "userid": 2,
+        "pointid": 10,
+        "wastetypeid": 100,
+        "poids": 200
+      }
+  auth:
+    type: basic
+    username: dupont
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

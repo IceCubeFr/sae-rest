@@ -1,0 +1,18 @@
+info:
+  name: patch collectionPoint avec erreur content
+  type: http
+  seq: 20
+
+http:
+  method: PATCH
+  url: http://localhost:8080/sae/points/1
+  auth:
+    type: basic
+    username: paul
+    password: "1234"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
